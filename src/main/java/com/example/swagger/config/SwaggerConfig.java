@@ -27,10 +27,9 @@ public class SwaggerConfig {
 
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("《----我是title-----》")//标题
-                .description("《-----我是描述----》：http://www.google.com.hk")//描述
-                .termsOfServiceUrl("http://www.google.com.hk")//（不可见）条款地址
-//                .contact(new Contact("zz","google.com.hk","123@qq.com"))//作者信息，2.5.0版本下可用，
+                .title("Swagger 开发规范")//标题
+                .description("Saggger 开发规范详文档细地址--->>>>>>>：http://blog.csdn.net/xxoo00xx00/article/details/77163399")//描述
+                .termsOfServiceUrl("http://blog.csdn.net/xxoo00xx00/article/details/77163399")//（不可见）条款地址
                 .version("6.6.6")//版本号
                 .build();
     }
