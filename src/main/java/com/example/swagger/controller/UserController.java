@@ -25,7 +25,7 @@ public class UserController {
 //            @ApiResponse(code = 500, message = "服务器不能完成请求")
     }
     )
-    @RequestMapping(value = {""}, method = RequestMethod.GET)
+    @RequestMapping(value = {""}, method=RequestMethod.GET)
     public List<User> getUserList() {
         List<User> r = new ArrayList<User>(users.values());
         Map<String, Object> ret=  new HashMap<>();

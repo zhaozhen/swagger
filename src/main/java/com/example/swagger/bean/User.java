@@ -7,6 +7,7 @@ import io.swagger.annotations.ApiModelProperty;
 //@ApiModel(description = "我是描述",discriminator = "I am discriminator",value = "用户")
 public class User {
 
+
     //在http://localhost:8080/v2/api-docs,value会被翻译成desctription，方便理解
     @ApiModelProperty(value = "用户的姓名，比如'李四'")
     private String name;
