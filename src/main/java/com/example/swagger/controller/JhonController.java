@@ -2,6 +2,7 @@ package com.example.swagger.controller;
 
 import com.example.swagger.bean.User;
 import io.swagger.annotations.*;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.web.bind.annotation.*;
 
 import java.math.BigDecimal;
@@ -14,7 +15,7 @@ public class JhonController {
 
         static Map<String, User> users = Collections.synchronizedMap(new HashMap<String, User>());
 
-
+//
         @ApiOperation(value = "获取用户列表",notes = "根据url的id来获取用户详细信息，返回List<User>类型用户信息的JSON")
         @RequestMapping(value = {""}, method=RequestMethod.GET)
         public List<User> getUserList() {
@@ -71,4 +72,5 @@ public class JhonController {
                 users.remove(id);
                 return "success";
         }
+
 }
